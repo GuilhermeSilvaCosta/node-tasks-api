@@ -7,6 +7,7 @@ WORKDIR /home/node/app
 COPY package.json ./package.json
 
 RUN npm install --production
+RUN npm install sucrase -g
 
 COPY . .
 
